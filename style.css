@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 171px;
+}
+
+.brand-title {
+    margin-left: 4.2vw;
+}
+
+.navbar-links ul {
+    margin: 90px;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/*  Main  */
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 90px 0;
+    justify-content: center;
+}
+
+.contentContainer{
+    margin: 12px;
+    margin-bottom: 96px;
+}
+
+
+
+#first img {
+    max-width: 100%;
+    height: auto;
+}
+
+#second img{
+    max-width: 100%;
+    height: auto;
+}
+
+#secondLower {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#secondLower img{
+    max-width: 50%;
+    height: auto;
+}
+
+
+#third {
+    width: 708px;
+    height: auto;
+    vertical-align: center;
+    padding-top: 15vw;
+}
+
+#third h1{
+    font-size: 52px;
+}
+
+#third h2{
+margin-top: 24px;
+}
+#third p{
+    margin-top: 24px;
+    font-weight: 100;
+    margin-bottom: 25px;
+    margin-right: 100px;
+}
+
+#third button{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    padding: 10px 20px;
+    font-weight: bolder;
+
+}
+
+
+#fourth img{
+    max-width: 100%;
+    height: auto;
+}
+
+#fourthLower {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#fourthLower img{
+    max-width: 33.3%;
+    height: auto;
+}
+
+/* Reviews */
+
+#reviews{
+    margin: auto;
+    margin-top: -100px;
+
+    width:77vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review{
+    
+    width: 30%;
+    height: auto;
+    vertical-align: center;
+    margin: 15px;
+}
+
+.reviewContent
+{
+    text-align: justify;
+    line-height: 2;
+}
+
+.reviewAuthor {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+#sitePicker
+{
+    width: 100%;
+    text-align: center; 
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+
+#rightFooter{
+    padding: 80px 19vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 434px;
+}
+#socialMediaMenu img{
+    margin: 13px;
+}
+.footerMenu{
+    margin: 20px;
+}
+
+.footerMenu ul{
+    list-style-type: none;
+}
+
+.footerMenu li{
+    transform: translateX(-40px);
+    opacity: 0.7;
+    font-weight: lighter;
+}
+
+.footerCategoryTitle{
+    font-size: 25px;
+    font-weight: bolder;
+}
+#newsLetter input{
+    margin-top: 20px;
+    width: 250px;
+    background-color: black;
+    border: 0;
+    border-bottom: 1px solid white;
+}
+#newsLetter button{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 10px;
+    margin-top: 20px;
+    transform: translateX(155px);
+}
+#copyRightFooter{
+    background-color: #505050;
+    width: 100%;
+    height: 104px;
+    color: white;
+    padding-top:50px;
+}
+#copyRightFooter span{
+    margin-left: 18vw;
+}
+
+
+@media (max-width: 608px)
+{
+    /* Navigation */
+    .brand-title {
+        margin-top: 10px;
+    }
+
+    .navbar{
+        height: 60px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        margin: 0;
+        padding: 20px 0;
+        width: 17%;
+        flex-direction: column;
+        
+    }
+    .navbar-links li{
+        text-align: right;
+        padding: 10px 5px;
+        background-color: white;
+        z-index: 1;
+    }    
+    .navbar-links.active{
+        display: flex;
+    }
+
+    /* Main */
+
+    .content {
+        padding: 10px 0;
+
+    }
+
+    /* Reviews */
+
+    .review {
+        width: 70%;
+    }
+
+    /* Footer */
+    
+}
